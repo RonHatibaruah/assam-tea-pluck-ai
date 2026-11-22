@@ -360,9 +360,9 @@ SUPPORTING MATERIAL FIELDS / URLS FOR SUBMISSION:
 1. Upload Proof of Work / Solution Evidence:
    File: NESFIC_I_05_Proof_of_Work_Proposal.pdf (Generated PDF in workspace)
 2. Demo / Product Video URL:
-   https://tea-pluck-ai.assam.gov.in/demo
+   https://assam-tea-pluck-ai.pages.dev
 3. Product / Website URL:
-   https://tea-pluck-ai.assam.gov.in
+   https://assam-tea-pluck-ai.pages.dev
 4. Additional Supporting Material (Optional PDF):
    File: NESFIC_I_05_Supplementary_Data_Sheets.pdf
 ================================================================================
