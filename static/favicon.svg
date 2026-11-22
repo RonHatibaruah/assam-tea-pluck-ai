@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062413" />
+      <stop offset="100%" stop-color="#02140a" />
+    </linearGradient>
+    <linearGradient id="bud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle with AI border -->
+  <rect width="100" height="100" rx="24" fill="url(#bg)" stroke="#22c55e" stroke-width="2.5" />
+  
+  <!-- AI tech circuit dots/lines -->
+  <circle cx="20" cy="20" r="3" fill="#4ade80" opacity="0.6"/>
+  <circle cx="80" cy="20" r="3" fill="#4ade80" opacity="0.6"/>
+  <circle cx="20" cy="80" r="3" fill="#4ade80" opacity="0.6"/>
+  <circle cx="80" cy="80" r="3" fill="#4ade80" opacity="0.6"/>
+  <path d="M20,20 L35,35 M80,20 L65,35" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.4"/>
+  
+  <!-- Stem -->
+  <path d="M50,82 Q49,60 50,45" stroke="#86efac" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- First Tender Leaf (Left) -->
+  <path d="M50,60 C32,60 22,46 25,32 C38,34 46,45 50,60 Z" fill="url(#leaf)"/>
+  
+  <!-- Second Tender Leaf (Right) -->
+  <path d="M50,56 C68,54 78,40 75,26 C62,28 54,41 50,56 Z" fill="url(#leaf)"/>
+  
+  <!-- Apical Bud (Center Top) -->
+  <path d="M50,48 C44,38 43,22 50,14 C57,22 56,38 50,48 Z" fill="url(#bud)"/>
+  
+  <!-- AI Target Reticle -->
+  <circle cx="50" cy="30" r="24" fill="none" stroke="#00e676" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.8"/>
+  <circle cx="50" cy="58" r="3" fill="#ef4444" stroke="#ffffff" stroke-width="1"/>
+</svg>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://assam-tea-pluck-ai.pages.dev/sitemap.xml

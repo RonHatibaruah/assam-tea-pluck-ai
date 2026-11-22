@@ -1,0 +1,21 @@
+{
+  "name": "assam-tea-pluck-ai",
+  "version": "1.0.0",
+  "description": "Low-Cost AI-Enabled Selective Tea Plucker for Two Leaves and a Bud (NESFIC-I-05 / TRA Tocklai)",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static build ready for Cloudflare Pages'",
+    "start": "python3 server.py"
+  },
+  "keywords": [
+    "tea-plucking-ai",
+    "nesfic-i-05",
+    "two-leaves-and-a-bud",
+    "tra-tocklai",
+    "agritech",
+    "edge-ai",
+    "assam-tea"
+  ],
+  "author": "Ron Hatibaruah",
+  "license": "MIT"
+}
