@@ -123,11 +123,11 @@
       <div class="flex items-center flex-wrap gap-2 text-xs">
         <div class="bg-emerald-950/80 border border-emerald-800/80 rounded-lg px-3 py-1.5 flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span class="text-slate-300 font-medium">Grant: <strong class="text-white">₹40.00 Lakhs</strong></span>
+          <span class="text-slate-300 font-medium">Status: <strong class="text-white">Field Pilot Ready (TRL-4)</strong></span>
         </div>
-        <div class="bg-blue-950/80 border border-blue-800/80 rounded-lg px-3 py-1.5 flex items-center gap-2">
-          <i class="fa-solid fa-users-gear text-blue-400"></i>
-          <span class="text-slate-300 font-medium">Tech Team: <strong class="text-white">₹20.00 Lakhs (50%)</strong></span>
+        <div class="bg-emerald-950/80 border border-emerald-800/80 rounded-lg px-3 py-1.5 flex items-center gap-2">
+          <i class="fa-solid fa-award text-emerald-400"></i>
+          <span class="text-slate-300 font-medium">Standard: <strong class="text-white">&ge;88% Fine Leaf Count</strong></span>
         </div>
         <a href="NESFIC_I_05_Proof_of_Work_Proposal.pdf" download="NESFIC_I_05_Proof_of_Work_Proposal.pdf" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-4 py-1.5 rounded-lg flex items-center gap-2 transition shadow-lg shadow-emerald-900/30">
           <i class="fa-solid fa-file-pdf"></i>
@@ -146,10 +146,7 @@
         <i class="fa-solid fa-clipboard-list"></i>
         <span>Proposal Form Submissions (12 Sections)</span>
       </button>
-      <button onclick="switchTab('budget')" id="tab-btn-budget" class="px-4 py-2.5 font-medium flex items-center gap-2 border-b-2 border-transparent text-slate-400 hover:text-white transition">
-        <i class="fa-solid fa-chart-pie"></i>
-        <span>Grant Budget Allocation (₹40L)</span>
-      </button>
+
       <button onclick="switchTab('fleet')" id="tab-btn-fleet" class="px-4 py-2.5 font-medium flex items-center gap-2 border-b-2 border-transparent text-slate-400 hover:text-white transition">
         <i class="fa-solid fa-tower-broadcast"></i>
         <span>Estate Fleet Telemetry</span>
@@ -437,128 +434,6 @@
       </div>
     </div>
 
-    <!-- TAB 3: GRANT BUDGET ALLOCATION -->
-    <div id="tab-content-budget" class="hidden space-y-6">
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-        <div class="flex items-center justify-between flex-wrap gap-4 mb-6">
-          <div>
-            <h2 class="text-xl font-bold text-white flex items-center gap-2">
-              <i class="fa-solid fa-wallet text-emerald-400"></i>
-              <span>Indicative Resource & Grant Allocation (₹40.00 Lakhs Total)</span>
-            </h2>
-            <p class="text-xs text-slate-400 mt-1">
-              Strictly updated per grant specifications: <strong>₹20.00 Lakhs (50%)</strong> for Technical Engineering Team, with other headings balanced accordingly.
-            </p>
-          </div>
-          <div class="bg-emerald-950 border border-emerald-700/60 text-emerald-300 px-4 py-2 rounded-xl text-xs font-mono font-bold">
-            TOTAL GRANT: ₹40,00,000 INR
-          </div>
-        </div>
-
-        <!-- Budget Visual Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
-          
-          <div class="bg-emerald-950/70 border-2 border-emerald-500/80 rounded-xl p-4 relative overflow-hidden">
-            <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 font-bold text-[10px] px-2 py-0.5 rounded-bl">
-              50% OF GRANT
-            </div>
-            <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">1. Technical Team</span>
-            <div class="mt-2 text-2xl font-bold font-mono text-white">₹20.00 L</div>
-            <p class="text-[11px] text-slate-300 mt-1">Lead AI/CV, Robotics/Mechatronics, Embedded Firmware & Agronomist</p>
-          </div>
-
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
-            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">2. Hardware Prototyping</span>
-            <div class="mt-2 text-2xl font-bold font-mono text-white">₹8.00 L</div>
-            <p class="text-[11px] text-slate-400 mt-1">RGB-D Cameras, Jetson Orin Nano, BLDC Motors, Titanium Blades (20%)</p>
-          </div>
-
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
-            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">3. Field Trials (TRA)</span>
-            <div class="mt-2 text-2xl font-bold font-mono text-white">₹5.00 L</div>
-            <p class="text-[11px] text-slate-400 mt-1">Multi-season trials at TRA Tocklai & commercial partner estates (12.5%)</p>
-          </div>
-
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
-            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">4. Dataset & Benchmarking</span>
-            <div class="mt-2 text-2xl font-bold font-mono text-white">₹4.00 L</div>
-            <p class="text-[11px] text-slate-400 mt-1">25,000 canopy images, TRA botanical polygon labeling & assays (10%)</p>
-          </div>
-
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
-            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">5. Safety, IP & Buffer</span>
-            <div class="mt-2 text-2xl font-bold font-mono text-white">₹3.00 L</div>
-            <p class="text-[11px] text-slate-400 mt-1">Harness ISO safety, IP67 weather testing, patent filing & buffer (7.5%)</p>
-          </div>
-
-        </div>
-
-        <!-- Detailed Breakdown Table -->
-        <div class="overflow-x-auto rounded-xl border border-slate-800">
-          <table class="w-full text-left text-xs">
-            <thead class="bg-slate-950 text-slate-300 border-b border-slate-800 font-semibold">
-              <tr>
-                <th class="p-3.5">Budget Head</th>
-                <th class="p-3.5">Key Resource Allocation & Deliverables</th>
-                <th class="p-3.5">Amount (INR)</th>
-                <th class="p-3.5">Amount (Lakhs)</th>
-                <th class="p-3.5">% Share</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-800/80 font-mono">
-              <tr class="bg-emerald-950/30 text-slate-200">
-                <td class="p-3.5 font-sans font-bold text-emerald-400">1. Technical Engineering Team</td>
-                <td class="p-3.5 font-sans text-slate-300">
-                  • Computer Vision & Edge AI Lead (12M): ₹8.00 L<br/>
-                  • Robotics & Mechatronics Hardware Engineer (12M): ₹6.50 L<br/>
-                  • Embedded Firmware & IoT Specialist (8M): ₹3.50 L<br/>
-                  • Tea Agronomy & Field Operations Coordinator (6M): ₹2.00 L
-                </td>
-                <td class="p-3.5 font-bold text-white">₹20,00,000</td>
-                <td class="p-3.5 font-bold text-white">₹20.00 L</td>
-                <td class="p-3.5 font-bold text-emerald-400">50.0%</td>
-              </tr>
-              <tr class="hover:bg-slate-800/40 transition">
-                <td class="p-3.5 font-sans font-medium text-slate-200">2. Hardware, Sensors & Mechatronics</td>
-                <td class="p-3.5 font-sans text-slate-300">Stereo RGB-D cameras (3 units), Jetson Orin Nano modules, titanium micro-shear blades, cyclonic vacuum blowers, carbon-fiber wands, 24V LiFePO4 packs, IP67 housings</td>
-                <td class="p-3.5">₹8,00,000</td>
-                <td class="p-3.5">₹8.00 L</td>
-                <td class="p-3.5 text-slate-400">20.0%</td>
-              </tr>
-              <tr class="hover:bg-slate-800/40 transition">
-                <td class="p-3.5 font-sans font-medium text-slate-200">3. Field Trials & Pilot Testing in Assam</td>
-                <td class="p-3.5 font-sans text-slate-300">Field trials at TRA Tocklai (Jorhat) & commercial estates in Golaghat/Dibrugarh. Travel, operator training stipends, field calibration rigs, and estate liaison</td>
-                <td class="p-3.5">₹5,00,000</td>
-                <td class="p-3.5">₹5.00 L</td>
-                <td class="p-3.5 text-slate-400">12.5%</td>
-              </tr>
-              <tr class="hover:bg-slate-800/40 transition">
-                <td class="p-3.5 font-sans font-medium text-slate-200">4. Dataset Collection & Agro Benchmarking</td>
-                <td class="p-3.5 font-sans text-slate-300">25,000-image multi-clone RGB-D canopy dataset collection, expert TRA botanical polygon annotation, laboratory leaf catechin/polyphenol biochemical assays</td>
-                <td class="p-3.5">₹4,00,000</td>
-                <td class="p-3.5">₹4.00 L</td>
-                <td class="p-3.5 text-slate-400">10.0%</td>
-              </tr>
-              <tr class="hover:bg-slate-800/40 transition">
-                <td class="p-3.5 font-sans font-medium text-slate-200">5. Safety, Ergonomics, IP & Contingencies</td>
-                <td class="p-3.5 font-sans text-slate-300">Ergonomic harness load certification (ISO 11228), IP67 weather testing, Indian provisional patent filing & legal fees, emergency spare parts buffer</td>
-                <td class="p-3.5">₹3,00,000</td>
-                <td class="p-3.5">₹3.00 L</td>
-                <td class="p-3.5 text-slate-400">7.5%</td>
-              </tr>
-              <tr class="bg-slate-950 font-bold text-emerald-400 text-sm">
-                <td class="p-3.5 font-sans">TOTAL GRANT ALLOCATION</td>
-                <td class="p-3.5 font-sans text-slate-300">Complete 12-Month Project Lifecycle Budget (TRL-3 to TRL-7 Field Deployment)</td>
-                <td class="p-3.5 text-white">₹40,00,000</td>
-                <td class="p-3.5 text-white">₹40.00 L</td>
-                <td class="p-3.5">100.0%</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
     <!-- TAB 4: ESTATE FLEET TELEMETRY -->
     <div id="tab-content-fleet" class="hidden space-y-6">
       <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
@@ -707,7 +582,7 @@
   <script>
     // Tab Switching Logic
     function switchTab(tabId) {
-      const tabs = ['simulator', 'proposal', 'budget', 'fleet', 'evidence'];
+      const tabs = ['simulator', 'proposal', 'fleet', 'evidence'];
       tabs.forEach(t => {
         document.getElementById(`tab-content-${t}`).classList.add('hidden');
         document.getElementById(`tab-btn-${t}`).classList.remove('tab-active');
